@@ -1,6 +1,14 @@
 .header{
   height: 50px;
   background-color: violet;
+  color: white;
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.2rem;
 }
