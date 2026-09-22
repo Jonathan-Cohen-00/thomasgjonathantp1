@@ -1,3 +1,4 @@
+// Style du header : couleur violette, hauteur 50px, texte blanc centré
 .header{
   height: 50px;
   background-color: violet;
@@ -8,6 +9,7 @@
   justify-content: center;
 }
 
+// Retire la marge par défaut du h1 pour bien centrer le texte dans les 50px
 .header h1 {
   margin: 0;
   font-size: 1.2rem;
