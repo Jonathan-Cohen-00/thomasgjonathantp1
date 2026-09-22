@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+/* Retire la marge par défaut du body pour que le header/footer touchent bien les bords */
+body {
+  margin: 0;
+}

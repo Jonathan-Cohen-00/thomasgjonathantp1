@@ -1,0 +1,8 @@
+// La zone centrale prend toute la hauteur restante (100vh  header 50px footer 50px)
+// et centre son contenu horizontalement et verticalement
+.content {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
