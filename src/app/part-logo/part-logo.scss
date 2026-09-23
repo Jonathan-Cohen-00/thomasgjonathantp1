@@ -1,3 +1,19 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 5px solid white;
+}
+
 .red {
   background-color: red;
 }
