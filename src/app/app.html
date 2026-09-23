@@ -2,8 +2,8 @@
 <app-header />
 
 <!-- Zone centrale : contient le carré, centré sur le reste de la page -->
-<main class="content">
-  <app-carre />
+<main class="content" [style.background-color]="bgColor()">
+  <app-carre (selectColor)="onBgColorChange($event)" />
 </main>
 
 <!-- Footer en bas de la page -->

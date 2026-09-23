@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { PartLogo } from '../part-logo/part-logo';
 
 // Composant Carre : affiche le carré de 400px avec sa bordure noire
@@ -8,4 +8,10 @@ import { PartLogo } from '../part-logo/part-logo';
   templateUrl: './carre.html',
   styleUrl: './carre.scss',
 })
-export class Carre {}
+export class Carre {
+  @Output() selectColor = new EventEmitter<string>();
+
+  onSelectColor(color: string): void {
+    this.selectColor.emit(color);
+  }
+}

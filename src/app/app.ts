@@ -12,4 +12,9 @@ import { Carre } from './carre/carre';
 })
 export class App {
   protected readonly title = signal('thomasgjonathan');
+  public bgColor = signal<string>('white');
+
+  public onBgColorChange(color: string): void {
+    this.bgColor.set(color);
+  }
 }

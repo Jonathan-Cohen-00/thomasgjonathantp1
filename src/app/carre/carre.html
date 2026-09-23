@@ -1,7 +1,7 @@
 <!-- Carré central de 400px avec bordure noire -->
 <div class="carre">
-  <app-part-logo color="red"/>
-  <app-part-logo color="blue"/>
-  <app-part-logo color="green"/>
-  <app-part-logo color="yellow"/>
+  <app-part-logo color="red" (selectColor)="onSelectColor($event)"/>
+  <app-part-logo color="blue" (selectColor)="onSelectColor($event)"/>
+  <app-part-logo color="green" (selectColor)="onSelectColor($event)"/>
+  <app-part-logo color="yellow" (selectColor)="onSelectColor($event)"/>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgClass } from '@angular/common';
 
 @Component({
@@ -9,4 +9,9 @@ import { NgClass } from '@angular/common';
 })
 export class PartLogo {
   @Input() color: string = ''; // PARENT --> ENFANT
+  @Output() selectColor = new EventEmitter<string>(); // ENFANT --> PARENT
+
+  onPartClick(): void {
+    this.selectColor.emit(this.color);
+  }
 }
